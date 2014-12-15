@@ -68,17 +68,22 @@ ul.social-icons li a:hover {
 	opacity:1;
 }
 /***** Skills *****/
+.skills h2 {
+	text-align:left;
+	
+	
+}
 .skills .span3 {
-	width:235px;
+	width:280px;
 	overflow: hidden;
 }
 .skills .span5 {
 	text-align:left;
 	padding:47px 0;
 }
-.skills .ps, .skills .ai, .skills .html, .skills .css {
+.skills .android, .skills .java, .skills .html, .skills .css {
 	padding:25px;
-	width:100px;
+	width:200px;
 	height:100px;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -91,10 +96,10 @@ ul.social-icons li a:hover {
 	-o-transition: all 0.2s linear;
 	transition: all 0.2s linear;
 }
-.skills .ps {
+.skills .android {
 	background:#30a5dc;
 }
-.skills .ai {
+.skills .java {
 	background:#ee742b;
 }
 .skills .html {
@@ -103,10 +108,10 @@ ul.social-icons li a:hover {
 .skills .css {
 	background:#39d084;
 }
-.skills .ps:hover, .skills .ai:hover, .skills .html:hover, .skills .css:hover {
+.skills .android:hover, .skills .java:hover, .skills .html:hover, .skills .css:hover {
 	border:8px solid #fff;
 }
-.skills .ps h3, .skills .ai h3, .skills .html h3, .skills .css h3 {
+.skills .android h3, .skills .java h3, .skills .html h3, .skills .css h3 {
 	color:#fff;
 	font-size: 3.4em;
 	font-weight: normal;
@@ -139,13 +144,13 @@ ul.social-icons li a:hover {
 .skills .span5 h3 span {
 	float:right;
 }
-.ps2 {
+.android2 {
 	width:90%;
 	background:#30a5dc;
 	-moz-animation:html5 2s ease-out;
 	-webkit-animation:html5 2s ease-out;
 }
-.ai2 {
+.java2 {
 	width:80%;
 	background:#ee742b;
 	-moz-animation:css3 2s ease-out;
@@ -163,7 +168,7 @@ ul.social-icons li a:hover {
 	-moz-animation:photoshop 2s ease-out;
 	-webkit-animation:photoshop 2s ease-out;
 }
- @-moz-keyframes ps2 {
+ @-moz-keyframes android2 {
 0% {
 width:0px;
 }
@@ -171,7 +176,7 @@ width:0px;
 width:90%;
 }
 }
-@-moz-keyframes ai2 {
+@-moz-keyframes java2 {
 0% {
 width:0px;
 }
@@ -195,7 +200,7 @@ width:0px;
 width:85%;
 }
 }
- @-webkit-keyframes ps2 {
+ @-webkit-keyframes android2 {
 0% {
 width:0px;
 }
@@ -203,7 +208,7 @@ width:0px;
 width:90%;
 }
 }
-@-webkit-keyframes ai {
+@-webkit-keyframes ai2 {
 0% {
 width:0px;
 }
@@ -228,8 +233,10 @@ width:85%;
 }
 }
 /**** Work container *****/
+
 ul.work-images li {
 	list-style:none;
+
 	display:inline-block;
 	margin: 8px 10px;
  background:
