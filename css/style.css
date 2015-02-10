@@ -81,7 +81,7 @@ ul.social-icons li a:hover {
 	text-align:left;
 	padding:47px 0;
 }
-.skills .android, .skills .java, .skills .html, .skills .css {
+.skills .android, .skills .java, .skills .python, .skills .web_desgin , .skills .web_service , .skills .sql{
 	padding:25px;
 	width:200px;
 	height:100px;
@@ -102,22 +102,31 @@ ul.social-icons li a:hover {
 .skills .java {
 	background:#ee742b;
 }
-.skills .html {
+.skills .python {
 	background:#f04949;
 }
-.skills .css {
+.skills .web_desgin {
 	background:#39d084;
 }
-.skills .android:hover, .skills .java:hover, .skills .html:hover, .skills .css:hover {
+.skills .web_service {
+	background:#119955;
+}
+.skills .sql {
+	background:#8181F7;
+}
+.skills .android:hover, .skills .java:hover, .skills .python:hover, .skills .web_desgin:hover, .skills .web_service:hover , .skills .sql:hover{
 	border:8px solid #fff;
 }
-.skills .android h3, .skills .java h3, .skills .html h3, .skills .css h3 {
+.skills .android h3, .skills .java h3, .skills .python h3, .skills .web_desgin h3 , 
+.skills .web_service h3 , .skills .sql h3 {
 	color:#fff;
 	font-size: 3.4em;
 	font-weight: normal;
 	line-height: 80px;
 }
-.skills .html h3, .skills .css h3 {
+.skills .android h3,.skills .java h3,
+.skills .python h3, .skills .web_desgin h3  , 
+.skills .web_service h3 , .skills .sql h3{
 	font-size: 2.2em;
 }
 .expand-bg {
@@ -151,20 +160,32 @@ ul.social-icons li a:hover {
 	-webkit-animation:html5 2s ease-out;
 }
 .java2 {
-	width:80%;
+	width:70%;
 	background:#ee742b;
 	-moz-animation:css3 2s ease-out;
 	-webkit-animation:css3 2s ease-out;
 }
-.html2 {
-	width:75%;
+.python2 {
+	width:50%;
 	background:#f04949;
 	-moz-animation:jquery 2s ease-out;
 	-webkit-animation:jquery 2s ease-out;
 }
-.css2 {
-	width:85%;
+.web_desgin2 {
+	width:65%;
 	background:#39d084;
+	-moz-animation:photoshop 2s ease-out;
+	-webkit-animation:photoshop 2s ease-out;
+}
+.web_service2 {
+	width:65%;
+	background:#119955;
+	-moz-animation:photoshop 2s ease-out;
+	-webkit-animation:photoshop 2s ease-out;
+}
+.sql2 {
+	width:60%;
+	background:#8181F7;
 	-moz-animation:photoshop 2s ease-out;
 	-webkit-animation:photoshop 2s ease-out;
 }
@@ -184,7 +205,7 @@ width:0px;
 width:80%;
 }
 }
-@-moz-keyframes html2 {
+@-moz-keyframes python2 {
 0% {
 width:0px;
 }
@@ -192,7 +213,23 @@ width:0px;
 width:75%;
 }
 }
-@-moz-keyframes css2 {
+@-moz-keyframes web_desgin2 {
+0% {
+width:0px;
+}
+100% {
+width:85%;
+}
+}
+@-moz-keyframes web_service2 {
+0% {
+width:0px;
+}
+100% {
+width:85%;
+}
+}
+@-moz-keyframes sql2 {
 0% {
 width:0px;
 }
@@ -216,7 +253,7 @@ width:0px;
 width:80%;
 }
 }
-@-webkit-keyframes html {
+@-webkit-keyframes python {
 0% {
 width:0px;
 }
@@ -224,12 +261,28 @@ width:0px;
 width:75%;
 }
 }
-@-webkit-keyframes css {
+@-webkit-keyframes web_desgin {
 0% {
 width:0px;
 }
 100% {
-width:85%;
+width:70%;
+}
+}
+@-webkit-keyframes web_service {
+0% {
+width:0px;
+}
+100% {
+width:70%;
+}
+}
+@-webkit-keyframes sql {
+0% {
+width:0px;
+}
+100% {
+width:70%;
 }
 }
 /**** Work container *****/
