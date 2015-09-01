@@ -1,0 +1,596 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>20150905</title>
+  <meta name="title" content="" />
+  <meta name="description" content="An anniversary" />
+  <link rel="image_src" href="/images/tip_cards_image.png" />
+
+  
+  <link rel="shortcut icon" id="favicon" href="favicon.png"> 
+  <meta name="author" content="lewis">
+
+  
+  <link href='http://fonts.googleapis.com/css?family=OpenSans:100,300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+  <link href='css/style.css' rel='stylesheet' type='text/css'>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.16/dist/jquery.flip.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready( function() {
+      $(".card").flip({
+          axis: 'y',
+          trigger: 'click',
+      forceWidth: false,
+      forceHeight: false
+        }).find('.front, .back').css({
+      'width': '100%',
+      'height': '100%'
+    });
+
+    $(".card").on('flip:done',function(){
+      var $this = $(this);
+
+      var footer =  $this.find('.img-footer');
+      if(footer.is(":visible")){
+        footer.hide();
+      }else{
+        footer.show();
+      }
+           
+      
+    });    
+      //$("#card2").flip();
+      console.log($('.card-outside').length);
+      for(i=0 ; i < $('.card-outside').length ; i++){
+        // var tmp = $('.card-outside').get(i);
+        // var img_w = $(tmp).find('img').width();
+        // $(tmp).find('.img-footer').css('width',img_w);
+        // console.log($(tmp).find('img').attr('src')+":"+img_w);
+      }
+
+      $( ".img-container img" ).load(function() {
+        // Handler for .load() called.
+        var $this = $(this);
+       
+        var img_w = $this.width();
+        $this.parents('.img-container').find('.img-footer').css('width',img_w);
+        console.log($this.attr('src')+":"+img_w);
+      });
+     
+    });
+
+
+    
+  </script>
+
+
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <div class="main">
+      <div class="header">
+        <h1>cihm & justsea <br>An anniversary <br>20140905~20150905</h1>
+        <h2>記得點圖片喔^^ ， 看完可以再點回來</h2>
+                    
+      </div>
+      
+      <div class="container">
+       <div class="row">
+        <div class="page-container">
+
+          <div class="card-outside col-md-4"> 
+            <div id="card" class = "card"> 
+              <div class="front"> 
+                
+              
+                <div class='img-container'>
+                    <img src="img/01.jpg" alt="Mountain View"class="img-responsive">  
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div> 
+
+              </div> 
+              <div class="back" >
+              
+              </div> 
+            </div>
+          </div>  
+
+          <div class="card-outside col-md-4"> 
+            <div id="card2"class = "card"> 
+              <div class="front"> 
+                
+               
+                 <div class='img-container'>
+                    <img src="img/02.jpg" alt="Mountain View"class="img-responsive"> 
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>  
+
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>        
+
+          <div class="card-outside col-md-4"> 
+            <div id="card3"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/03.jpg" alt="Mountain View"class="img-responsive">   
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div> 
+               
+              </div> 
+              <div class="back">
+
+                Back content
+              </div> 
+            </div>
+          </div>
+
+          <div class="card-outside col-md-4"> 
+            <div id="card4"class = "card"> 
+              <div class="front"> 
+                <div class='img-container'>
+                    <img src="img/04.jpg" alt="Mountain View"class="img-responsive">    
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div> 
+              
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>        
+
+          <div class="card-outside col-md-4"> 
+            <div id="card5"class = "card"> 
+              <div class="front"> 
+                <div class='img-container'>
+                    <img src="img/05.jpg" alt="Mountain View"class="img-responsive">    
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>               
+              
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>
+          <div class="card-outside col-md-4"> 
+            <div id="card6"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/06.jpg" alt="Mountain View"class="img-responsive">   
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+                
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>        
+
+          <div class="card-outside col-md-4"> 
+            <div id="card7"class = "card"> 
+              <div class="front"> 
+                <div class='img-container'>
+                    <img src="img/07.jpg" alt="Mountain View"class="img-responsive">  
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+               
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>
+          <div class="card-outside col-md-4"> 
+            <div id="card8"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/08.jpg" alt="Mountain View"class="img-responsive">   
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+              
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>
+
+          <div class="card-outside col-md-4"> 
+            <div id="card2"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/09.jpg" alt="Mountain View"class="img-responsive"> 
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+               
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>        
+
+          <div class="card-outside col-md-4"> 
+            <div id="card2"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/10.jpg" alt="Mountain View"class="img-responsive">    
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+                
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>
+          <div class="card-outside col-md-4"> 
+            <div id="card2"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/11.jpg" alt="Mountain View"class="img-responsive"> 
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+                
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>        
+
+          <div class="card-outside col-md-4"> 
+            <div id="card2"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/12.jpg" alt="Mountain View"class="img-responsive">   
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+               
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>
+
+
+          <div class="card-outside col-md-4"> 
+            <div id="card" class = "card"> 
+              <div class="front"> 
+                
+              
+                <div class='img-container'>
+                    <img src="img/13.jpg" alt="Mountain View"class="img-responsive">  
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div> 
+
+              </div> 
+              <div class="back" >
+              
+              </div> 
+            </div>
+          </div>  
+
+          <div class="card-outside col-md-4"> 
+            <div id="card2"class = "card"> 
+              <div class="front"> 
+                
+               
+                 <div class='img-container'>
+                    <img src="img/14.jpg" alt="Mountain View"class="img-responsive"> 
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>  
+
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>        
+
+          <div class="card-outside col-md-4"> 
+            <div id="card3"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/15.jpg" alt="Mountain View"class="img-responsive">   
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div> 
+               
+              </div> 
+              <div class="back">
+
+                Back content
+              </div> 
+            </div>
+          </div>
+
+          <div class="card-outside col-md-4"> 
+            <div id="card4"class = "card"> 
+              <div class="front"> 
+                <div class='img-container'>
+                    <img src="img/16.jpg" alt="Mountain View"class="img-responsive">    
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div> 
+              
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>        
+
+          <div class="card-outside col-md-4"> 
+            <div id="card5"class = "card"> 
+              <div class="front"> 
+                <div class='img-container'>
+                    <img src="img/17.jpg" alt="Mountain View"class="img-responsive">    
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>               
+              
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>
+          <div class="card-outside col-md-4"> 
+            <div id="card6"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/18.jpg" alt="Mountain View"class="img-responsive">   
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+                
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>        
+
+          <div class="card-outside col-md-4"> 
+            <div id="card7"class = "card"> 
+              <div class="front"> 
+                <div class='img-container'>
+                    <img src="img/19.jpg" alt="Mountain View"class="img-responsive">  
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+               
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>
+          <div class="card-outside col-md-4"> 
+            <div id="card8"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/20.jpg" alt="Mountain View"class="img-responsive">   
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+              
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>
+
+          <div class="card-outside col-md-4"> 
+            <div id="card2"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/21.jpg" alt="Mountain View"class="img-responsive"> 
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+               
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>        
+
+          <div class="card-outside col-md-4"> 
+            <div id="card2"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/22.jpg" alt="Mountain View"class="img-responsive">    
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+                
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>
+          <div class="card-outside col-md-4"> 
+            <div id="card2"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/23.jpg" alt="Mountain View"class="img-responsive"> 
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+                
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>        
+
+          <div class="card-outside col-md-4"> 
+            <div id="card2"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/24.jpg" alt="Mountain View"class="img-responsive">   
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+               
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>
+
+
+          <div class="card-outside col-md-4"> 
+            <div id="card8"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/25.jpg" alt="Mountain View"class="img-responsive">   
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+              
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>
+
+          <div class="card-outside col-md-4"> 
+            <div id="card2"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/26.jpg" alt="Mountain View"class="img-responsive"> 
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+               
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>        
+
+          <div class="card-outside col-md-4"> 
+            <div id="card2"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/27.jpg" alt="Mountain View"class="img-responsive">    
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+                
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>
+          <div class="card-outside col-md-4"> 
+            <div id="card2"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/28.jpg" alt="Mountain View"class="img-responsive"> 
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+                
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>        
+
+          <div class="card-outside col-md-4"> 
+            <div id="card2"class = "card"> 
+              <div class="front"> 
+                 <div class='img-container'>
+                    <img src="img/29.jpg" alt="Mountain View"class="img-responsive">   
+                    <div class='img-footer'>
+                        <p>Image Footer text</p>
+                    </div>    
+                </div>                 
+               
+              </div> 
+              <div class="back">
+                Back content
+              </div> 
+            </div>
+          </div>
+
+
+        </div>
+       </div>
+      </div>  
+    </div>      
+  </div>
+</body>
+</html>
