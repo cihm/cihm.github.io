@@ -1,8 +1,15 @@
  html {
       height: 100%;
+      
     }
+
+
+
+
     body {
-      background: #E5E8ED;
+     background-image: url("../img/back.jpg") ; 
+      background-size:   cover;                      /* <------ */
+      background-repeat: no-repeat;
       padding: 0;
       text-align: center;
       font-family: 'Open Sans';
@@ -18,13 +25,15 @@
     }
     
     .header {
+      
       padding: 30px 0 0;
       float: left;
       width: 100%;
-      background: white;
+      
     }
     
     .wrapper {
+
       height: auto !important;
       height: 100%;
       margin: 0 auto; 
@@ -142,7 +151,8 @@
   
     
     .page-container {
-    background: #E5E8ED;
+
+    background:rgba(228, 231, 236, 0.37);
       max-width: 1010px;
       margin: auto;
       position: relative;
